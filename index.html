@@ -25,25 +25,24 @@
 
             let stawkadzienna;
             if (days === 1) {
-                stawkadzienna = 200;
+                 stawkadzienna = 200;
             } else if (days >= 2 && days <= 3) {
-                stawkadzienna = 180;
+                 stawkadzienna = 180;
             } else if (days >= 4 && days <= 7) {
                 stawkadzienna = 160;
             } else {
                 stawkadzienna = 150;
-            }
+        }
 
             let lacznykoszt = days * stawkadzienna;
             let znizka = Math.floor(days / 7) * 50;
             lacznykoszt -= znizka;
 
+            // Użycie document.write
             document.write(`Cena za wynajem pokoju na ${days} dni wynosi: <b>${lacznykoszt} zł</b>, w tym rabat: <b>${znizka} zł</b>`);
-            //document.getElementById("wynik").innerHTML = 
-                //`Cena za wynajem pokoju na <b>${days}</b> dni wynosi: <b>${lacznykoszt} zł</b>, w tym rabat: <b>${znizka} zł</b>`;
-        //}
+        }
 
-        rentCost();
+rentCost();
     </script>
 
 </body>
