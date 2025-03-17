@@ -1,7 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 50px;
+    background-color: #f9f9f9;
 }
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+h1 {
+    color: #0044cc;
+}
+hr {
+    border: 1px solid #ccc;
+}
+.footer {
+    margin-top: 20px;
+    color: gray;
