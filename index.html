@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        function rentCost(days) {
+            days = parseInt(prompt("Podaj liczbę dni wynajmu:"))
+            if (days <= 0) {
+                return "Liczba dni musi być większa od zera.";
+            }
+            let stawkadzienna;
+            if (days == 1){
+                stawkadzienna = 200;
+            }
+            else if (days >= 2 && days <= 3){
+                stawkadzienna = 180;
+            }
+            else if (days >= 4 && days <= 7){
+                stawkadzienna = 160;
+            }
+            else {
+                stawkadzienna = 150;
+            }
 
+            let lacznykoszt = days * stawkadzienna;
+            let znizka = Math.floor(days / 7) * 50;
+            lacznykoszt -= znizka;
+            
+            return '${lacznykoszt}zł';
+        }
+    </script>
+</body>
+</html>
