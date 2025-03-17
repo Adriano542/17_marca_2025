@@ -13,7 +13,7 @@
         <h2>Wynajem pokoju</h2>
         <p id="wynik"></p>
         <hr>
-        <p class="footer">© Me &nbsp;&nbsp;&nbsp;&nbsp; XXI c.</p>
+        <p class="footer">© Me <br></br> XXI c.</p>
     </div>
 
     <script>
@@ -38,12 +38,14 @@
             let znizka = Math.floor(days / 7) * 50;
             lacznykoszt -= znizka;
 
-            document.getElementById("wynik").innerHTML = 
-                `Cena za wynajem pokoju na <b>${days}</b> dni wynosi: <b>${lacznykoszt} zł</b>, w tym rabat: <b>${znizka} zł</b>`;
-        }
+            document.write(`Cena za wynajem pokoju na ${days} dni wynosi: <b>${lacznykoszt} zł</b>, w tym rabat: <b>${znizka} zł</b>`);
+            //document.getElementById("wynik").innerHTML = 
+                //`Cena za wynajem pokoju na <b>${days}</b> dni wynosi: <b>${lacznykoszt} zł</b>, w tym rabat: <b>${znizka} zł</b>`;
+        //}
 
         rentCost();
     </script>
 
 </body>
 </html>
+
