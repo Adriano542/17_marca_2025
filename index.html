@@ -12,7 +12,7 @@
     <script>
         function rentCost(days) {
             days = parseInt(prompt("Podaj liczbę dni wynajmu:"))
-            if (days <= 0) {
+            if (isNaN(days) || days <= 0) {
                 return "Liczba dni musi być większa od zera.";
             }
             let stawkadzienna;
@@ -33,7 +33,7 @@
             let znizka = Math.floor(days / 7) * 50;
             lacznykoszt -= znizka;
             
-            return '${lacznykoszt}zł';
+            return `{lacznykoszt}zł`;
         }
         rentCost()
     </script>
