@@ -13,7 +13,7 @@
         function rentCost(days) {
             days = parseInt(prompt("Podaj liczbę dni wynajmu:"))
             if (isNaN(days) || days <= 0) {
-                return "Liczba dni musi być większa od zera.";
+                document.write("Liczba dni musi być większa od zera.");
             }
             let stawkadzienna;
             if (days == 1){
